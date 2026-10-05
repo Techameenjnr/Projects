@@ -1,1 +1,1 @@
-I have 1E (hex) apples and bananas (up)
+PYTHON (low) coding (up) FF (hex) 1111 (bin)

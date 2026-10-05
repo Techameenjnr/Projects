@@ -10,14 +10,19 @@ for index, word in enumerate(words):
         words[index - 1] = str(int(a, 16))
         words.pop(index)
 
-    elif word == "(bin)":
+    if word == "(bin)":
         b = words[index - 1]
         words[index - 1] = str(int(b, 2))
         words.pop(index)
-    elif word == "(up)":
+    if word == "(up)":
         u = words[index - 1]
         words[index - 1] = u.upper()
         words.pop(index)
+    if word == "(low)":
+        l = words[index - 1]
+        words[index - 1] = l.lower()
+        words.pop(index)
+
 
 print(words)
 text = " ".join(words)
